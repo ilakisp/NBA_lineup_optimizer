@@ -82,7 +82,7 @@ This is where the small script for information sending over email is placed.
 As mentioned above, developed part of the project. Currently produces daily comparison of model performance vs competition and randomly generated team
 
 ## Last remarks
-The project is not plug-and-play for other users, as it needs tweaking for personal usage, especially salary data fetching from betting sites, that I am not willing to distribute. However, it can provide some insights and ideas how similar projects can be made! :) 
+The project is not plug-and-play for other users, as it needs tweaking for personal usage, especially salary data fetching from betting sites, that I am not willing to share. However, it can provide some insights and ideas how similar projects can be made! :) 
 
 
 
