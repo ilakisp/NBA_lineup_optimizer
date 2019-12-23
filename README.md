@@ -1,5 +1,5 @@
 # Project idea
-With the rapid rise of Daily Fantasy sports betting options for different sports (basketball, football, mma) on different platforms (DraftKings,Fanduel), I thought it could be an interesting project to try and build a ML model that would analyze, predict and optimize a best-performing lineup on any given match-day.
+With the rapid rise of Daily Fantasy sports betting options for different sports (basketball, football, mma) on different platforms (DraftKings,Fanduel), I thought it could be an interesting project to try and build a ML model in Python that would analyze, predict and optimize a best-performing lineup on any given match-day.
 
 The way Daily Fantasy betting works is by giving you a certain amount of virtual money (salary cap) that you can then use to pick and choose players for your daily lineup. Players of course come at a cost - better players with higher cost, worse players with lower cost.
 Once you pick your lineup, you can enter competitions/tournaments against other bettors who picked their own lineup.
