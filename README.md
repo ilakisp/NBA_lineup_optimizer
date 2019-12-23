@@ -56,14 +56,17 @@ Lastly, I run all the functions defined above get myself a daily basketball squa
 
 ## Files
 
-1. modelling.ipynb
-This is where the ML model is created using past season's data from sqlite3 database. 
-
-2. main_file.ipynb
+1. main_file_v.10.0.ipynb
 This is body of the whole project. Though placed in a single file, it is split into multiple sections and numerous functions, in a similart manner as my 11-bullet-point description above.
 
-3. send_email.py 
+2. scikit_model_v.4.0.ipynb
+This is where the ML model is created using past season's data from sqlite3 database. 
+
+3. Send_email_v.4.0.ipynb
 This is where the small script for information sending over email is placed.
+
+4. results_analysis_v.4.1.ipynb
+As mentioned above, developed part of the project. Currently produces daily comparison of model performance vs competition and randomly generated team
 
 ## Last remarks
 The project is not plug-and-play for other users, as it needs tweaking for personal usage, especially salary data fetching from betting sites, that I am not willing to distribute. However, it can provide some insights and ideas how similar projects can be made! :) 
