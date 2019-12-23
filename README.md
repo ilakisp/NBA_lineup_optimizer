@@ -27,45 +27,58 @@ Creating a good ML model requires plenty of past data. For that purpose I utiliz
 Every day, as the matches are played, I utilize same NBA_api package to fetch recent performances, that will then be used for the prediction of performance for the next match.
 
 2. Data wrangling.
+
 Once the necessary data is fetched, before the ML modelling can take place, data has to be cleaned. Using Pandas and Numpy I clean the data and create rolling-averages of results for 1, 5 and 15 day windows. These attributes are stored with Sqlite3 and will then be used for learning and predicting.
 
 3. Modelling.
+
 Now that past-season data is ready, I utilize scikit-learn library to create a Random-Forest ML model (the model has ~88 attributes). The model is then stored using Pickle for later usage. 
 
 4. Preparation for predictions.
+
 As for modelling part, the new daily information on players' performance also has to be wrangled similarly, so that it can be plugged into the created model for predictions. 
 
 5. Predictions.
+
 Using model created in part 4 and data wrangled in part 5, I now make my predictions on how players will perform in their coming game.
 
 6. Fetching salary data from betting sites.
+
 This may have been the most difficult and tedious task. Using BeautifulSoup I created a script to scrape players' salaries and and relevant betting-information from betting site. To prevent any kind of misuse of the script for damaging the betting websites, I will not share here :)
 
 7. Optimization.
+
 Now I have my predictions how players will perform in their coming game and I now what salary they have on a betting website. For instance, player X might have a salary of 10M and I predict that he will score 50 daily fantasy points, while player Y has a a salary of 10M and will score 60 fantasy points. Now here it would be simple to just pick player Y, but it can gets extremely complex with 7-player lineup and varying salaries/predictions.
 For that reason I utilize Pulp package for optimization. I do that by plugging in the data for predicted performance, salaries, salary cap and other restrctions, such as the total number of players, limit of players in certain basketball positions. 
 
 8. Output.
+
 I use smtplib package to receive the optimized lineup over email alongside data-quality information that I have been taking note of during the whole process (i.e. how much data fetched, how many attributes used in predictions)
 
 9. Results' analysis.
+
 Currently this is least developed part of my project. Now I utilize matplotlib library to visualize how my model's prediction compare against the actual results of the players every day, how a randomly picked team performed against my model-team.
  
 10. Putting it all together.
+
 Lastly, I run all the functions defined above get myself a daily basketball squad with ML-model predicted and then optimized performance :) 
 
 ## Files
 
 1. main_file_v.10.0.ipynb
+
 This is body of the whole project. Though placed in a single file, it is split into multiple sections and numerous functions, in a similart manner as my 11-bullet-point description above.
 
 2. scikit_model_v.4.0.ipynb
+
 This is where the ML model is created using past season's data from sqlite3 database. 
 
 3. Send_email_v.4.0.ipynb
+
 This is where the small script for information sending over email is placed.
 
 4. results_analysis_v.4.1.ipynb
+
 As mentioned above, developed part of the project. Currently produces daily comparison of model performance vs competition and randomly generated team
 
 ## Last remarks
