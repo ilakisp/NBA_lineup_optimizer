@@ -18,7 +18,7 @@ Libraries and packages
 Importing all the libraries used in the project. Most important - pandas, numpy, scikit-learn, pulp, matplotlib, sqlite3, etc. 
 
 Constants and basic data
-Defining constants, such as the daily fantasy score (optimization goal of the project), basic boxscore items, such as points scored and rebounds, as well as advanced items, such as defensive efficiency and similar. Some helper-functionsfor the whole project are placed here as well.
+Defining constants, such as the daily fantasy score (DF_PTS - optimization goal of the project, which is a combination of points, rebouns, assists and similar), basic boxscore items, such as points scored and rebounds, as well as advanced items, such as defensive efficiency and similar. Some helper-functionsfor the whole project are placed here as well.
 
 1. Data gathering
 
