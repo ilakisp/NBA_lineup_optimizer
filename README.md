@@ -10,6 +10,8 @@ The idea of the project that if the betting sites do not set player-salaries at 
 
 # Project structure
 
+![structure](misc.JPG)
+
 ## The project is built with several sections:
 
 Libraries and packages
@@ -51,11 +53,11 @@ This may have been the most difficult and tedious task. Using BeautifulSoup I cr
 Now I have my predictions how players will perform in their coming game and I now what salary they have on a betting website. For instance, player X might have a salary of 10M and I predict that he will score 50 daily fantasy points, while player Y has a a salary of 10M and will score 60 fantasy points. Now here it would be simple to just pick player Y, but it can gets extremely complex with 7-player lineup and varying salaries/predictions.
 For that reason I utilize Pulp package for optimization. I do that by plugging in the data for predicted performance, salaries, salary cap and other restrctions, such as the total number of players, limit of players in certain basketball positions. 
 
-9. Output.
+8. Output.
 
 I use smtplib package to receive the optimized lineup over email alongside data-quality information that I have been taking note of during the whole process (i.e. how much data fetched, how many attributes used in predictions)
 
-10. Putting it all together.
+9. Putting it all together.
 
 Lastly, I run all the functions defined above get myself a daily basketball squad with ML-model predicted and then optimized performance :) 
 
