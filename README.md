@@ -18,7 +18,7 @@ Importing all the libraries used in the project. Most important - pandas, numpy,
 Constants and basic data
 Defining constants, such as the daily fantasy score (optimization goal of the project), basic boxscore items, such as points scored and rebounds, as well as advanced items, such as defensive efficiency and similar. Some helper-functionsfor the whole project are placed here as well.
 
-1. Data gatherign 
+1. Data gathering
 
 1.1 Fetching past players' performance data for ML model development.
 Creating a good ML model requires plenty of past data. For that purpose I utilize NBA_api package that allowed me to fetch ordinary and advanced boxscore data for all nba players/teams for the past seasons.
