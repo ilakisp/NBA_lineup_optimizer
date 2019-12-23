@@ -12,7 +12,7 @@ The idea of the project that if the betting sites do not set player-salaries at 
 
 ## The project is built with several sections:
 
-00.Libraries and packages
+00. Libraries and packages
 Importing all the libraries used in the project. Most important - pandas, numpy, scikit-learn, pulp, matplotlib, sqlite3, etc. 
 
 0. Constants and basic data
@@ -20,6 +20,7 @@ Defining constants, such as the daily fantasy score (optimization goal of the pr
 
 1.1 Fetching past players' performance data for ML model development.
 Creating a good ML model requires plenty of past data. For that purpose I utilize NBA_api package that allowed me to fetch ordinary and advanced boxscore data for all nba players/teams for the past seasons.
+
 1.2 Fetching ongoing players' performance data for predicting.
 Every day, as the matches are played, I utilize same NBA_api package to fetch recent performances, that will then be used for the prediction of performance for the next match.
 
@@ -64,15 +65,6 @@ This is where the small script for information sending over email is placed.
 
 ## Last remarks
 The project is not plug-and-play for other users, as it needs tweaking for personal usage, especially salary data fetching from betting sites, that I am not willing to distribute. However, it can provide some insights and ideas how similar projects can be made! :) 
-
-
-
-
-
-
-
-
-
 
 
 
